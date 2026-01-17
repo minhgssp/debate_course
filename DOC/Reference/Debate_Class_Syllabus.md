@@ -13,12 +13,15 @@ DỤNG CỤ TỐI THIỂU:
 - Đề bài B: AI có thể thay thế hướng dẫn viên du lịch địa phương ở Hội An
 
 
-1. KHỞI ĐỘNG: THANH ĐO Ý KIẾN (10 PHÚT)
+1. KHỞI ĐỘNG (10 PHÚT)
 Hoạt động này giúp học sinh "phá băng" và làm quen với việc đưa ra quan điểm công khai.
 
 HOẠT ĐỘNG (PRE-GAME):
 Giảng viên dùng 3 góc lớp hoặc 3 hàng ghế để chia khu vực: "Hoàn toàn đồng ý", "Trung lập", "Hoàn toàn phản đối".
-Đọc Kiến nghị (Đề bài A): "Học sinh nên / không nên được phép sử dụng AI trong làm bài tập và học tập."
+Đọc Kiến nghị (chọn 1 trong các đề bài sau):
+- Đề bài A: "Học sinh nên / không nên được phép sử dụng AI trong làm bài tập và học tập."
+- Đề bài B: "Cấm sử dụng túi nilon ở phố cổ Hội An."
+- Đề bài C: "Bắt buộc dán nhãn 'AI tạo ra' cho mọi ảnh trên mạng."
 Yêu cầu: 40 học sinh phải di chuyển vật lý về khu vực thể hiện quan điểm của mình. Không được đứng ngoài cuộc.
 Phỏng vấn: Giảng viên chọn ngẫu nhiên 1 bạn ở mỗi khu vực hỏi: "Tại sao em đứng đây?".
 Dẫn nhập lý thuyết: "Các em vừa đưa ra một Claim (Tuyên bố). Nhưng để thuyết phục người ở nhóm khác bước sang nhóm mình, các em cần nhiều hơn thế. Đó chính là Cấu trúc tranh biện."

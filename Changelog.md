@@ -7,3 +7,4 @@
 - Bổ sung `README.md` và `.gitignore`
 - Nhúng PDF `Life_Not_Skills.pdf` thành section đầu tiên trên web
 - Cập nhật PRD/Solution cho phương án B và khởi tạo Git repo
+- Cập nhật hoạt động khởi động và bổ sung đề bài gợi ý
