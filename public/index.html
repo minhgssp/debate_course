@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LỚP HỌC TRANH BIỆN - TƯ DUY KỶ NGUYÊN AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>DEBATE<span class="highlight">MASTER</span></h2>
+                <p>KỶ NGUYÊN AI</p>
+            </div>
+            <ul class="nav-list" id="navList">
+                <li class="nav-item active" data-target="life-not-skills">0. LIFE NOT SKILLS (PDF)</li>
+                <li class="nav-item" data-target="intro">1. GIỚI THIỆU CHUNG</li>
+                <li class="nav-item activity" data-target="activity-warmup">2. HĐ: THANH ĐO Ý KIẾN</li>
+                <li class="nav-item activity" data-target="activity-hat">3. HĐ: CHIẾC NÓN KỲ DIỆU</li>
+                <li class="nav-item theory" data-target="theory-analysis">4. LT: PHÂN TÍCH ĐỀ</li>
+                <li class="nav-item activity" data-target="activity-stakeholder">5. HĐ: BẢN ĐỒ TƯ DUY</li>
+                <li class="nav-item activity" data-target="activity-why">6. HĐ: CHUỖI XÍCH TẠI SAO</li>
+                <li class="nav-item theory" data-target="theory-crei">7. LT: MÔ HÌNH C.R.E.I</li>
+                <li class="nav-item theory" data-target="crei-example-a">8. VD: CREI ĐỀ BÀI A</li>
+                <li class="nav-item theory" data-target="crei-example-b">9. VD: CREI ĐỀ BÀI B</li>
+                <li class="nav-item activity" data-target="activity-workshop">10. HĐ: XƯỞNG LUẬN ĐIỂM</li>
+                <li class="nav-item activity" data-target="activity-pingpong">11. HĐ: BÓNG BÀN PHẢN BIỆN</li>
+                <li class="nav-item theory" data-target="theory-rebuttal">12. LT: PHẢN BIỆN & CHẤT VẤN</li>
+                <li class="nav-item activity" data-target="activity-hotseat">13. HĐ: GHẾ NÓNG</li>
+                <li class="nav-item" data-target="outro">14. TỔNG KẾT</li>
+            </ul>
+            <div class="timer-section">
+                <p class="timer-label">⏱️ Thời gian còn lại</p>
+                <div class="timer-display" id="timer">02:00:00</div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+
+            <!-- Slide: Life Not Skills (PDF) -->
+            <section id="life-not-skills" class="slide active">
+                <div class="card-header">
+                    <span class="tag">TÀI LIỆU THAM KHẢO</span>
+                    <h2>LIFE NOT SKILLS</h2>
+                    <p class="objective">PDF được nhúng trực tiếp để đọc ngay trên trang.</p>
+                </div>
+                <div class="card-body pdf-embed">
+                    <iframe
+                        src="assets/Life_Not_Skills.pdf"
+                        title="Life Not Skills PDF"
+                        loading="lazy">
+                    </iframe>
+                    <p class="pdf-note">
+                        Nếu không xem được, hãy <a href="assets/Life_Not_Skills.pdf" target="_blank" rel="noopener">mở
+                            PDF trong tab mới</a>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Slide: Intro -->
+            <section id="intro" class="slide">
+                <div class="slide-content center-text">
+                    <span class="intro-tag">120 PHÚT | 40 HỌC SINH | 8 NHÓM</span>
+                    <h1>KỸ NĂNG TƯ DUY & TRANH BIỆN<br><span class="gradient-text">TRONG KỶ NGUYÊN AI</span></h1>
+                </div>
+            </section>
+
+            <!-- Activity: Warmup -->
+            <section id="activity-warmup" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">HOẠT ĐỘNG KHỞI ĐỘNG • 10 PHÚT</span>
+                    <h2>THANH ĐO Ý KIẾN</h2>
+                    <p class="objective">Mục tiêu: Phá băng, tập đưa ra quan điểm công khai.</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>📋 LUẬT CHƠI</h3>
+                        <ol>
+                            <li>Phòng học chia làm 3 khu vực: <span class="zone green">ĐỒNG Ý</span> - <span
+                                    class="zone gray">TRUNG LẬP</span> - <span class="zone red">PHẢN ĐỐI</span></li>
+                            <li>Nghe "Đề bài", di chuyển <strong>NGAY LẬP TỨC</strong> về vị trí quan điểm của bạn.
+                                <em>Không được đứng ngoài cuộc!</em></li>
+                            <li>Chuẩn bị trả lời phỏng vấn nhanh trong 1 câu: <em>"Tại sao em đứng đây?"</em></li>
+                        </ol>
+                    </div>
+                    <div class="motion-box">
+                        <h4>ĐỀ BÀI A</h4>
+                        <p>"Học sinh nên / không nên được phép sử dụng AI trong làm bài tập và học tập."</p>
+                    </div>
+                    <div class="takeaway-box">
+                        💡 <strong>Dẫn nhập:</strong> "Các em vừa đưa ra một <em>Claim</em> (Tuyên bố). Nhưng để thuyết
+                        phục người khác bước sang nhóm mình, các em cần nhiều hơn thế. Đó chính là <strong>Cấu trúc
+                            tranh biện</strong>."
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity: Magic Hat -->
+            <section id="activity-hat" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">HOẠT ĐỘNG NHÓM • 10 PHÚT</span>
+                    <h2>CHIẾC NÓN KỲ DIỆU</h2>
+                    <p class="objective">Mục tiêu: Hiểu rằng một vấn đề có nhiều góc nhìn khác nhau.</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>📋 LUẬT CHƠI</h3>
+                        <ol>
+                            <li>Mỗi nhóm bốc thăm 1 <strong>Vai Trò (Stakeholder)</strong>.</li>
+                            <li>Chủ đề: <strong>Đề bài A (Học sinh nên / không nên được phép sử dụng AI trong làm bài tập và học tập)</strong>.</li>
+                            <li>Các vai: 🧑‍🎓 Học sinh giỏi, 🧑‍🎓 Học sinh yếu, 👩‍🏫 Giáo viên, 👨‍👩‍👧 Phụ huynh,
+                                🏫 Ban giám hiệu, 💡 Chuyên gia công nghệ giáo dục.</li>
+                            <li>Thời gian: <strong>3 Phút</strong>.</li>
+                            <li>Nhiệm vụ: Liệt kê <strong>3 Nỗi sợ</strong> hoặc <strong>3 Nhu cầu</strong> của nhân
+                                vật.</li>
+                            <li>Đại diện nhóm đứng lên <strong>hô to từ khóa</strong>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Theory: Analysis -->
+            <section id="theory-analysis" class="slide">
+                <h2>PHÂN TÍCH ĐỀ & TÌM Ý</h2>
+                <p class="subtitle">Đúc kết lý thuyết • 5 phút</p>
+                <div class="grid-2">
+                    <div class="col">
+                        <h3>TOPIC VS. ĐỀ BÀI</h3>
+                        <div class="comparison">
+                            <div class="item bad">
+                                <strong>❌ Topic (Chủ đề)</strong>
+                                <p>Rộng, chung chung, không rõ thái độ.<br><em>VD: AI trong giáo dục</em></p>
+                            </div>
+                            <div class="item good">
+                                <strong>✅ Đề Bài (Motion)</strong>
+                                <p>Cụ thể, có hành động, tranh cãi được.<br><em>VD: Bắt buộc dạy AI trong trường
+                                        học.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>STAKEHOLDER ANALYSIS</h3>
+                        <p>Để không bị bí ý, hãy tự hỏi:</p>
+                        <p class="quote">"Vấn đề này ảnh hưởng đến <strong>tiền bạc</strong>, <strong>cảm xúc</strong>
+                            hay <strong>quyền lợi</strong> của ai?"</p>
+                        <ul class="stakeholder-list">
+                            <li>🧑‍🎓 Học sinh (Giỏi/Yếu)</li>
+                            <li>👩‍🏫 Giáo viên</li>
+                            <li>👨‍👩‍👧‍👦 Phụ huynh</li>
+                            <li>🕵️ Tội phạm/Hacker</li>
+                            <li>🏛️ Chính quyền</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity: Stakeholder Map -->
+            <section id="activity-stakeholder" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">HOẠT ĐỘNG NHÓM • 15 PHÚT</span>
+                    <h2>BẢN ĐỒ TƯ DUY NHÓM</h2>
+                    <p class="objective">Mục tiêu: Áp dụng Stakeholder Analysis để tìm ý.</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>📋 NHIỆM VỤ</h3>
+                        <ol>
+                            <li>Chọn 1 trong 2 đề bài:
+                                <ul>
+                                    <li><strong>Đề bài A:</strong> Học sinh nên / không nên được phép sử dụng AI trong làm bài tập và học tập.</li>
+                                    <li><strong>Đề bài B:</strong> AI có thể thay thế hướng dẫn viên du lịch địa phương ở Hội An.</li>
+                                </ul>
+                            </li>
+                            <li>Vẽ <strong>Stakeholder Map</strong> lên giấy A0.</li>
+                            <li><strong>Đầu ra:</strong> Xác định ≥2 lập luận mạnh nhất từ góc nhìn các bên liên quan.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="visual-guide">
+                        <div class="stakeholder-circle">
+                            <div class="center-topic">ĐỀ BÀI</div>
+                            <div class="spoke s1">👤 Ai?</div>
+                            <div class="spoke s2">💰 Tiền?</div>
+                            <div class="spoke s3">❤️ Cảm xúc?</div>
+                            <div class="spoke s4">⚖️ Quyền lợi?</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity: Why Chain -->
+            <section id="activity-why" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">HOẠT ĐỘNG CẶP ĐÔI • 10 PHÚT</span>
+                    <h2>CHUỖI XÍCH TẠI SAO</h2>
+                    <p class="objective">Mục tiêu: Nhận ra tầm quan trọng của Reasoning (Lý lẽ).</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>📋 LUẬT CHƠI</h3>
+                        <ol>
+                            <li>Làm việc theo cặp (A và B).</li>
+                            <li><strong>A</strong> đưa ra 1 tuyên bố (VD: "Không nên yêu AI").</li>
+                            <li><strong>B</strong> chỉ được hỏi duy nhất câu: <strong>"Tại sao?"</strong></li>
+                            <li>Lặp lại <strong>5 lần</strong> liên tiếp (A trả lời, B hỏi tiếp).</li>
+                        </ol>
+                    </div>
+                    <div class="tip-box">
+                        💡 <strong>Kết luận:</strong> Nếu A bí ⇒ Luận điểm bị <em>gãy mắt xích</em> (Reasoning chưa
+                        sâu).
+                    </div>
+                </div>
+            </section>
+
+            <!-- Theory: CREI -->
+            <section id="theory-crei" class="slide">
+                <h2>MÔ HÌNH C.R.E.I</h2>
+                <p class="subtitle">Công thức xây dựng luận điểm "bất khả chiến bại" • 10 phút</p>
+                <div class="crei-container">
+                    <div class="crei-block c">
+                        <span class="letter">C</span>
+                        <div class="detail">
+                            <strong>Claim (Tuyên bố)</strong>
+                            <p>Bạn muốn chứng minh điều gì? <em>(Cái gì?)</em></p>
+                        </div>
+                    </div>
+                    <div class="crei-block r">
+                        <span class="letter">R</span>
+                        <div class="detail">
+                            <strong>Reasoning (Lý lẽ)</strong>
+                            <p>Tại sao điều đó đúng? <em>(Logic nhân quả, Vì sao?)</em></p>
+                        </div>
+                    </div>
+                    <div class="crei-block e">
+                        <span class="letter">E</span>
+                        <div class="detail">
+                            <strong>Evidence (Dẫn chứng)</strong>
+                            <p>Thực tế chứng minh điều đó? <em>(Số liệu, nghiên cứu, ví dụ)</em></p>
+                        </div>
+                    </div>
+                    <div class="crei-block i">
+                        <span class="letter">I</span>
+                        <div class="detail">
+                            <strong>Impact (Tác động)</strong>
+                            <p>Tại sao điều này quan trọng? <em>(So what?)</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="crei-note">
+                    ⚙️ Mô hình C-R-E-I như một "viên gạch block" – thiếu 1 miếng là sụp đổ!
+                </div>
+            </section>
+
+            <!-- Example: CREI for Motion A -->
+            <section id="crei-example-a" class="slide">
+                <div class="card-header">
+                    <span class="tag">VÍ DỤ MINH HỌA • ĐỀ BÀI A</span>
+                    <h2>CREI CHO ĐỀ BÀI A</h2>
+                    <p class="objective">"Học sinh nên / không nên được phép sử dụng AI trong làm bài tập và học tập."</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>KHỐI CREI (ỦNG HỘ)</h3>
+                        <ul class="step-list">
+                            <li><strong>C (Claim):</strong> Nên cho phép học sinh dùng AI trong học tập.</li>
+                            <li><strong>R (Reasoning):</strong> AI giúp cá nhân hóa việc học và giải thích theo tốc độ
+                                từng em.</li>
+                            <li><strong>E (Evidence):</strong> Ví dụ: học sinh dùng AI để tóm tắt bài dài, hỏi lại phần
+                                chưa hiểu và được gợi ý làm bài.</li>
+                            <li><strong>I (Impact):</strong> Học sinh học sâu hơn, giảm chán nản và nâng hiệu quả tự học.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Example: CREI for Motion B -->
+            <section id="crei-example-b" class="slide">
+                <div class="card-header">
+                    <span class="tag">VÍ DỤ MINH HỌA • ĐỀ BÀI B</span>
+                    <h2>CREI CHO ĐỀ BÀI B</h2>
+                    <p class="objective">"AI có thể thay thế hướng dẫn viên du lịch địa phương ở Hội An."</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>KHỐI CREI (PHẢN ĐỐI)</h3>
+                        <ul class="step-list">
+                            <li><strong>C (Claim):</strong> AI không thể thay thế hoàn toàn hướng dẫn viên địa phương.</li>
+                            <li><strong>R (Reasoning):</strong> Trải nghiệm du lịch cần cảm xúc, kể chuyện sống động và
+                                ứng biến theo bối cảnh.</li>
+                            <li><strong>E (Evidence):</strong> Ví dụ: khách hỏi chuyện đời thường, phong tục, kỷ niệm cá
+                                nhân — điều AI khó truyền đạt như người địa phương.</li>
+                            <li><strong>I (Impact):</strong> Nếu thay thế, du khách mất “hồn phố”, giảm giá trị văn hóa
+                                và sinh kế địa phương.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity: Workshop -->
+            <section id="activity-workshop" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">HOẠT ĐỘNG LỚN • 20 PHÚT</span>
+                    <h2>XƯỞNG SẢN XUẤT LUẬN ĐIỂM</h2>
+                    <p class="objective">Mục tiêu: Thực hành xây dựng khối C.R.E.I hoàn chỉnh.</p>
+                </div>
+                <div class="card-body">
+                    <div class="grid-2">
+                        <div class="rule-box">
+                            <h3>📋 NHIỆM VỤ</h3>
+                            <p><strong>Đề bài:</strong> 1 trong 2 đề bài xuyên suốt (A/B).</p>
+                            <p>Dùng <strong>Sticky Notes 4 màu</strong> xây dựng khối C-R-E-I:</p>
+                            <ul class="color-list">
+                                <li><span class="color-dot yellow"></span> Vàng: Claim</li>
+                                <li><span class="color-dot blue"></span> Xanh: Reasoning</li>
+                                <li><span class="color-dot pink"></span> Hồng: Evidence</li>
+                                <li><span class="color-dot orange"></span> Cam: Impact</li>
+                            </ul>
+                            <p>Dán lên <strong>giấy A0</strong> theo đúng trật tự.</p>
+                        </div>
+                        <div class="check-box">
+                            <h3>🔍 KIỂM TRA</h3>
+                            <p>Giảng viên sẽ đi vòng quanh và <strong>bóc ngẫu nhiên</strong> 1 miếng 'E' hoặc 'R'.</p>
+                            <p class="challenge">Hỏi: "Mất miếng này, luận điểm có đứng vững không?"</p>
+                            <p>Nếu sụp đổ ⇒ <strong>Làm lại!</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity: Ping Pong -->
+            <section id="activity-pingpong" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">HOẠT ĐỘNG CẶP ĐÔI • 10 PHÚT</span>
+                    <h2>🏓 BÓNG BÀN PHẢN BIỆN</h2>
+                    <p class="objective">Mục tiêu: Phản xạ nhanh, tập trung vào việc "Bác bỏ" (Disprove).</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box">
+                        <h3>📋 LUẬT CHƠI</h3>
+                        <ol>
+                            <li>2 bạn đứng đối diện.</li>
+                            <li><strong>A</strong> nói 1 câu ủng hộ: <em>"Học sinh nên được phép sử dụng AI trong làm bài tập và học tập."</em></li>
+                            <li><strong>B</strong> phải phản bác <strong>NGAY LẬP TỨC</strong>: <em>"Không, điều đó khiến
+                                    học sinh lười tư duy."</em></li>
+                            <li>A phản bác lại B. Cứ thế tiếp tục.</li>
+                            <li>⏱️ Ai <strong>ngập ngừng quá 3 giây</strong> là THUA!</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Theory: Rebuttal & Chat Van -->
+            <section id="theory-rebuttal" class="slide">
+                <h2>PHẢN BIỆN & CHẤT VẤN</h2>
+                <p class="subtitle">Đúc kết lý thuyết • 5 phút</p>
+                <div class="grid-2">
+                    <div class="col">
+                        <h3>🛡️ 4 BƯỚC PHẢN BIỆN</h3>
+                        <ol class="step-list">
+                            <li><strong>"Họ nói..."</strong> (Nhắc lại luận điểm đối phương)</li>
+                            <li><strong>"Chúng tôi không đồng ý..."</strong> (Tuyên bố lập trường)</li>
+                            <li><strong>"Bởi vì..."</strong> (Lý lẽ/Dẫn chứng đối lập)</li>
+                            <li><strong>"Vì vậy..."</strong> (Hậu quả/So sánh tác động)</li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <h3>⚔️ CHẤT VẤN (POI)</h3>
+                        <p class="mantra"><em>Hỏi ngắn – Sát thương – Lịch sự</em></p>
+                        <div class="dos-donts">
+                            <div class="do">
+                                ✅ <strong>NÊN:</strong>
+                                <ul>
+                                    <li>Nhìn Giám khảo/Khán giả</li>
+                                    <li>Chuẩn bị kỹ trước</li>
+                                    <li>Câu hỏi < 15 giây</li>
+                                </ul>
+                            </div>
+                            <div class="dont">
+                                ❌ <strong>KHÔNG NÊN:</strong>
+                                <ul>
+                                    <li>Nhìn đối thủ (cãi nhau)</li>
+                                    <li>Công kích cá nhân</li>
+                                    <li>Spam câu hỏi / Quá ít câu hỏi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity: Hotseat -->
+            <section id="activity-hotseat" class="slide activity-mode">
+                <div class="card-header">
+                    <span class="tag">THỰC CHIẾN • 15 PHÚT</span>
+                    <h2>🔥 GHẾ NÓNG CHẤT VẤN</h2>
+                    <p class="objective">Mục tiêu: Thực hành trình bày và bảo vệ luận điểm dưới áp lực.</p>
+                </div>
+                <div class="card-body">
+                    <div class="rule-box highlight">
+                        <h3>📋 LUẬT CHƠI</h3>
+                        <ol>
+                            <li>Mời 1 bạn (hoặc nhóm trưởng) dũng cảm lên <strong>"Ghế Nóng"</strong>.</li>
+                            <li>Người đó trình bày luận điểm CREI vừa xây dựng ở Phần 7.</li>
+                            <li><strong>39 bạn</strong> còn lại ở dưới đóng vai phe đối lập.</li>
+                            <li>Khi muốn hỏi, giơ tay và hô to: <strong class="callout">"CÂU HỎI!"</strong></li>
+                            <li>Người trên ghế nóng <strong>phải chọn nhận ít nhất 2 câu hỏi</strong> trong bài nói và
+                                trả lời "ngầu" nhất có thể.</li>
+                        </ol>
+                    </div>
+                    <div class="tip-box">
+                        💡 <strong>Tip:</strong> Người hỏi nhớ quy tắc – Nhìn giám khảo, không nhìn đối thủ!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Outro -->
+            <section id="outro" class="slide">
+                <div class="slide-content center-text">
+                    <h1>TỔNG KẾT</h1>
+                    <div class="divider"></div>
+                    <div class="final-thoughts">
+                        <div class="thought-item">🧠 <strong>Hiểu đề & Stakeholder</strong></div>
+                        <div class="thought-item">🏗️ <strong>Nói có sách, mách có chứng (C.R.E.I)</strong></div>
+                        <div class="thought-item">👂 <strong>Lắng nghe để Phản biện</strong></div>
+                    </div>
+
+                    <div class="activity-box">
+                        <h3>🚶 HOẠT ĐỘNG KẾT: "HÀNH LANG LƯƠNG TÂM"</h3>
+                        <ol class="conscience-rules">
+                            <li>Cả lớp xếp thành 2 hàng dọc đối diện nhau.</li>
+                            <li>Giảng viên đi giữa hành lang.</li>
+                            <li>Khi giảng viên đi qua, mỗi bạn <strong>thì thầm</strong> 1 từ khóa tâm đắc nhất buổi
+                                học.<br><em>(VD: "CREI", "Impact", "Tại sao", "Tôn trọng"...)</em></li>
+                        </ol>
+                    </div>
+
+                    <div class="homework-box">
+                        <h3>🏠 BÀI TẬP VỀ NHÀ</h3>
+                        <p>Quay video <strong>1 phút</strong> (TikTok/Reels) phản biện lại <em>chính ý kiến của
+                                mình</em> đã nói trên lớp về 1 trong 2 đề bài xuyên suốt.</p>
+                        <p class="hashtag">#DebateMasterAI #CREI</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
