@@ -1,6 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item');
     const slides = document.querySelectorAll('.slide');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    // ===== Mobile Sidebar Toggle =====
+    function openSidebar() {
+        sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+        sidebarToggle.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        sidebarToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function toggleSidebar() {
+        if (sidebar.classList.contains('active')) {
+            closeSidebar();
+        } else {
+            openSidebar();
+        }
+    }
+
+    // Toggle button click
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', toggleSidebar);
+    }
+
+    // Click overlay to close
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', closeSidebar);
+    }
+
+    // Close sidebar on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+            closeSidebar();
+        }
+    });
+
+    // Check if mobile view
+    function isMobileView() {
+        return window.matchMedia('(max-width: 768px)').matches;
+    }
 
     // Navigation click handler
     navItems.forEach(item => {
@@ -14,6 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetSlide = document.getElementById(targetId);
             if (targetSlide) {
                 targetSlide.classList.add('active');
+            }
+
+            // Close sidebar on mobile after navigation
+            if (isMobileView()) {
+                closeSidebar();
             }
         });
     });
